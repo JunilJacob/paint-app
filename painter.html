@@ -160,6 +160,7 @@
   }
   function Mouseup (e) {
   	started =false;
+  	update();
   	var obj={};
   	if(tool=="rect"){
   		obj.type="rect";
@@ -185,7 +186,7 @@
   		obj.color=currentcolor;
   	}
   	data.push(obj);
-  	update();
+  	
  	
   	
   }
